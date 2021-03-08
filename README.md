@@ -34,3 +34,6 @@ docker run --rm --name ghost -p 3001:2368 -e URL=http://localhost -e DB=mysql \
 	-e MAILHOST=<mail server url> -e MAILPORT=<mail server port> \
 	ghost:latest
 ```
+
+----
+
