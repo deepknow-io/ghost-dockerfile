@@ -1,7 +1,7 @@
 # https://docs.ghost.org/faq/node-versions/
 # https://github.com/nodejs/LTS
 # https://github.com/TryGhost/Ghost/blob/3.3.0/package.json#L38
-FROM node:12-buster-slim
+FROM node:12-buster-slim AS ghost-3.40.5
 
 # grab gosu for easy step-down from root
 # https://github.com/tianon/gosu/releases
@@ -80,4 +80,9 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 
 EXPOSE 2368
 CMD ["node", "current/index.js"]
+
+FROM ghost-3.40.5 AS ghost-3.40.5-alb
+
+# Disable SSL redirect
+COPY url-redirects.js /var/lib/ghost/current/core/server/web/shared/middlewares/url-redirects.js
 
