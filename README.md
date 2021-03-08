@@ -10,6 +10,15 @@ to allow configuring database, smtp mail server at container start time.
 
 ----
 
+### Getting Started
+
+#### Prerequisite
+
+(Docker)[https://docs.docker.com/get-started/] (docker.com)
+(Ghost Cli)[https://ghost.org/docs/ghost-cli/] (ghost.org)
+
+----
+
 ### Run Locally
 
 #### Build
