@@ -14,8 +14,8 @@ to allow configuring database, smtp mail server at container start time.
 
 #### Prerequisite
 
-- (Docker)[https://docs.docker.com/get-started/] (docker.com)
-- (Ghost Cli)[https://ghost.org/docs/ghost-cli/] (ghost.org)
+- [Docker](https://docs.docker.com/get-started/) (docker.com)
+- [Ghost Cli](https://ghost.org/docs/ghost-cli/) (ghost.org)
 
 
 #### Build
