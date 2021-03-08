@@ -17,9 +17,6 @@ to allow configuring database, smtp mail server at container start time.
 (Docker)[https://docs.docker.com/get-started/] (docker.com)
 (Ghost Cli)[https://ghost.org/docs/ghost-cli/] (ghost.org)
 
-----
-
-### Run Locally
 
 #### Build
 
@@ -27,7 +24,7 @@ to allow configuring database, smtp mail server at container start time.
 docker build -t ghost:latest .
 ```
 
-#### Run
+#### Run Locally
 
 ```
 docker run --rm --name ghost -p 3001:2368 -e URL=http://localhost -e DB=mysql \
